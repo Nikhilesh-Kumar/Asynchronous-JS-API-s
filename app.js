@@ -20,9 +20,28 @@
 
 // below api not working - giving error
 
+
 // fetch('https://type.fit/api/quotes').then((data)=>{
+//     return data.json();
+// }).then((data)=>{
 //     console.log(data)
 // })
+
+
+
+
+// async function fetchQuotes(){
+//     let data =await  fetch('https://type.fit/api/quotes');
+//     let quotes = await data.json();
+//     let random = Math.floor(Math.random()*quotes.length);
+//     let quote = quotes[random];
+//     document.getElementById('quote').innerText = quote.text;
+//     document.getElementById('author').innerText = quote.author;
+// }
+// fetchQuotes()
+
+
+
 
 
 
@@ -33,6 +52,8 @@
 // })
 
 
+
+// Assignment - generating random user from randomuser api
 
 
 // async function fetchRandomUser(){
@@ -50,25 +71,24 @@
 
 
 
-// customized above code some more,
-//  for random user
+// customized above code some more, for random user
 
 
-const apiUrl = 'https://randomuser.me/api';
-let name = document.getElementById('name');
-let country = document.getElementById('country');
-let api_img = document.getElementById('api_img');
 
-async function fetchRandomUser(){
-    let data = await fetch(apiUrl);
-    let randomUser = await data.json();
+// const apiUrl = 'https://randomuser.me/api';
+// let name = document.getElementById('name');
+// let country = document.getElementById('country');
+// let api_img = document.getElementById('api_img');
 
-    let user = randomUser.results[0];
-    name.innerText = `${user.name.first} ${user.name.last}`
-    country.innerText = user.location.country
-    api_img.src = user.picture.medium
-}
-fetchRandomUser()
+// async function fetchRandomUser(){
+//     let data = await fetch(apiUrl);
+//     let randomUser = await data.json();
 
+//     let user = randomUser.results[0];
+//     name.innerText = `${user.name.first} ${user.name.last}`
+//     country.innerText = user.location.country
+//     api_img.src = user.picture.medium
+// }
+// fetchRandomUser()
 
 
