@@ -18,10 +18,10 @@
 // fetch is an async code
 
 
-// below api not working - giving error
+// Below api not working - giving error - add this at start to url and it works (https://corsproxy.io/?)
 
 
-// fetch('https://type.fit/api/quotes').then((data)=>{
+// fetch('https://corsproxy.io/?https://type.fit/api/quotes').then((data)=>{
 //     return data.json();
 // }).then((data)=>{
 //     console.log(data)
@@ -31,7 +31,7 @@
 
 
 // async function fetchQuotes(){
-//     let data =await  fetch('https://type.fit/api/quotes');
+//     let data =await  fetch('https://corsproxy.io/?https://type.fit/api/quotes');
 //     let quotes = await data.json();
 //     let random = Math.floor(Math.random()*quotes.length);
 //     let quote = quotes[random];
@@ -42,7 +42,7 @@
 
 
 
-
+// Ramdom User API
 
 
 // fetch('https://randomuser.me/api').then((data)=>{
